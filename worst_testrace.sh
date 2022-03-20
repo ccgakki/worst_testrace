@@ -158,15 +158,12 @@ repeat_test_alternative(){
 
 
 test_all(){
-	result_all	'116.6.211.41'	        '广东东莞CN2'
+	result_all	'116.6.211.41'	        '上海CN2'
 	result_all	'101.95.110.149'	'上海电信'
-
-	result_all	'153.36.202.5'		'江苏宿迁联通'
-
-	result_all	'120.199.239.1'		'浙江杭州移动'
-
+	result_all	'101.71.241.238'	'杭州联通'
+	result_all	'120.241.71.2'		'广州移动120'
+	result_all	'183.232.226.78'	'广州移动183'
 	result_all	'202.205.6.30'		'北京教育网'
-
 	echo -e "${Info} 四网路由快速测试 已完成 ！"
 }
 result_all(){
