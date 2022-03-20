@@ -158,7 +158,7 @@ repeat_test_alternative(){
 
 
 test_all(){
-	result_all	'116.6.211.41'	        '上海CN2'
+	result_all	'58.32.32.1'	        '上海CN2'
 	result_all	'101.95.110.149'	'上海电信'
 	result_all	'101.71.241.238'	'杭州联通'
 	result_all	'120.241.71.2'		'广州移动120'
