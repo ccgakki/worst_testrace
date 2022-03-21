@@ -7,7 +7,7 @@ Based on [Worsttrace](https://t.me/WorstTrace)
 ## Usage
 
 ```shell
-https://raw.githubusercontent.com/ccgakki/worst_testrace/main/worst_testrace.sh
+wget https://raw.githubusercontent.com/ccgakki/worst_testrace/main/worst_testrace.sh
 bash worst_testrace.sh
 ```
 
