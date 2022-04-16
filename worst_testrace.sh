@@ -160,7 +160,7 @@ repeat_test_alternative(){
 test_all(){
 	result_all	'58.32.32.1'	        '上海CN2'
 	result_all	'101.95.110.149'	'上海电信'
-	result_all	'112.65.63.1'	'上海联通'
+	result_all	'112.65.63.1'		'上海联通'
 	result_all	'120.241.71.2'		'广州移动120'
 	result_all	'183.232.226.78'	'广州移动183'
 	result_all	'202.205.6.30'		'北京教育网'
@@ -178,7 +178,7 @@ result_all(){
 check_system
 check_root
 install
-cd besttrace
+#cd besttrace
 
 echo -e "${Info} 选择你要使用的功能: "
 echo -e "1.选择一个节点进行测试\n2.四网路由快速测试\n3.手动输入 ip 进行测试"
