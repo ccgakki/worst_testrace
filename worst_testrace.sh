@@ -7,11 +7,13 @@ Error="${Red_font}[Error]${Font_suffix}"
 echo -e "${Green_font}
 #======================================
 # Project: worst_testrace
-# Version: 1.0
-# Author: KANIKIG
-# Github: https://github.com/KANIKIG
+# Version: 1.1
+# Author: KANIKIG ccgakki(Modify)
 #======================================
 ${Font_suffix}"
+
+#设置语言会采用的系统环境变量值为utf-8
+export LC_ALL="en_US.utf8"
 
 check_system(){
 	if   [[ ! -z "`cat /etc/issue | grep -iE "debian"`" ]]; then
@@ -71,7 +73,7 @@ test_alternative(){
 	result_alternative
 }
 select_alternative(){
-	echo -e "${Info} 选择需要测速的目标网络: \n1.中国电信\n2.中国联通\n3.中国移动\n4.教育网"
+	echo -e "${Info} 选择需要测试的目标网络: \n1.中国电信\n2.中国联通\n3.中国移动\n4.教育网"
 	read -p "输入数字以选择:" ISP
 
 	while [[ ! "${ISP}" =~ ^[1-4]$ ]]
@@ -161,8 +163,9 @@ test_all(){
 	result_all	'58.32.32.1'	        '上海CN2'
 	result_all	'101.95.110.149'	'上海电信'
 	result_all	'112.65.63.1'		'上海联通'
-	result_all	'120.241.71.2'		'广州移动120'
-	result_all	'183.232.226.78'	'广州移动183'
+	result_all	'210.13.66.238'		'上海联通9929'
+	result_all	'120.197.96.1'		'广州移动120'
+	result_all	'183.232.226.1'	'广州移动183'
 	result_all	'202.205.6.30'		'北京教育网'
 	echo -e "${Info} 四网路由快速测试 已完成 ！"
 }
